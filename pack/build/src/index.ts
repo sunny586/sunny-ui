@@ -1,3 +1,3 @@
 export * from './tasks/buildModules'
 
-export * from './tasks/buildFull'
+export * from './tasks/copy-pkg'

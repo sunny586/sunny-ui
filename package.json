@@ -1,15 +1,20 @@
 {
   "scripts": {
-    "serve": "pnpm -C example serve"
+    "serve": "pnpm -C example serve",
+    "build": "pnpm --filter \"./pack/build\" start"
   },
   "dependencies": {
+    "@sunny-ui/components": "workspace:*",
+    "@sunny-ui/utils": "workspace:*",
+    "@sunny-ui/constants": "workspace:*",
     "@vue/tsconfig": "^0.1.3",
-    "rimraf": "^4.4.0",
+    "element-plus": "^2.3.3",
     "standard-version": "^9.5.0",
     "sucrase": "^3.29.0",
-    "typescript": "^4.9.5",
-    "@sunny-ui/components": "workspace:*",
-    "element-plus": "^2.3.3",
+    "typescript": "~4.9.5",
     "vue": "^3.2.13"
+  },
+  "devDependencies": {
+    "rimraf": "^4.4.1"
   }
 }

@@ -6,8 +6,8 @@ export default series(
   withTaskName('clean', () => run('pnpm run clean')),
 
   parallel(
-    runTask('buildModules'),
-    runTask('buildFull')
+    withTaskName('buildFull', () => run('pnpm run build:rollup')),
+    runTask('copyPkg')
   )
 )
 

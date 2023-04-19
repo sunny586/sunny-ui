@@ -1,0 +1,8 @@
+{
+  "name": "@sunny-ui/utils",
+  "license": "MIT",
+  "main": "index.ts",
+  "peerDependencies": {
+    "vue": "3.2.13"
+  }
+}
