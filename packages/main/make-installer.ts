@@ -1,8 +1,8 @@
 import { App, Plugin } from 'vue'
 import { version as eleVersion } from 'element-plus'
 import { version } from './version'
-
-import 'element-plus/dist/index.css'
+// 引入element-plus 的公共样式
+import 'element-plus/theme-chalk/base.css'
 
 
 const INSTANLLED_KEY = Symbol('INSTANLLED_KEY')
